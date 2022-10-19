@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(255, 240, 185);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-size: 36px;
+    text-shadow: 0 2px 2px #777;
+}
+
+h2 {
+    text-shadow: 0 3px 3px #777;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.notes-section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .notes-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.note-card {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 3px 15px #777;
+    border-radius: 10px;
+}
+
+.trash-container {
+    margin: 30px 0 10px 0;
+}
+
+#trash {
+    background-color: rgb(60, 60, 60);
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px #777;
+    cursor: pointer;
+}
+
+form {
+    width: 350px;
+    box-shadow: 0 3px 15px #777;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 15px #777;
+    font-size: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    height: 120px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 15px #777;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border: 2px solid rgb(60, 60, 60);
+}
+
+form button {
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px #777;
+    font-weight: bold;
+}
+
+form button:hover {
+    border: 2px solid rgb(60, 60, 60);
+    color:rgb(60, 60, 60);
+    background-color: rgb(255, 240, 185);
+}
+
+footer {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
