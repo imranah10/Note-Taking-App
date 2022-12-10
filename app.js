@@ -7,10 +7,10 @@ const Note = require('./models/note');
 const app = express();
 
 // Connect to MongoDB Atlas and listen for requests
-const dbURI = "mongodb+srv://imran203:@nodefirstproject.a6czv88.mongodb.net/?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://Imran310:Imran310@cluster1.6nrpckq.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(result => app.listen(5000))
+    .then(result => app.listen(process.env.PORT || 5000))
     .catch(err => console.log(err));
 
 // Register View Engine
