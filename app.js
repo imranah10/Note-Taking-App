@@ -7,7 +7,7 @@ const Note = require('./models/note');
 const app = express();
 
 // Connect to MongoDB Atlas and listen for requests
-const dbURI = "mongodb+srv://Imran310:Imran310@cluster1.6nrpckq.mongodb.net/?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://Imran310:XUg9l5qYDfp0lF96@cluster1.6nrpckq.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(result => app.listen(process.env.PORT || 5000))
